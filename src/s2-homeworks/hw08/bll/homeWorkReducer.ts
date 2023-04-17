@@ -9,11 +9,11 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
         case 'sort': {
             return (action.payload === 'up') ?
                 state.map(el => ({...el})).sort((a, b) => {
-                    if (a.name.toLowerCase() > b.name.toLowerCase()) return -1
+                    if (a.name.toLowerCase() > b.name.toLowerCase()) return 1
                     else return 0
                 })
                 : state.map(el => ({...el})).sort((a, b) => {
-                    if (a.name.toLowerCase() > b.name.toLowerCase()) return -1
+                    if (a.name.toLowerCase() > b.name.toLowerCase()) return 1
                     else return 0
                 }).reverse()
         }
