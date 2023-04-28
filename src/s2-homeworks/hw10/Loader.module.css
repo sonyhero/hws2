@@ -1,3 +1,10 @@
 .loader {
+    display: flex;
+    justify-content: center;
+}
+
+.loader img {
     /*свг и/или анимация*/
+    width: 100px;
+    height: 100px;
 }
